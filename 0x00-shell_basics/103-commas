@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -al -m
+ls -A1 | LC_ALL=C sort -n | tr '\n' ',' | sed 's/\(.*\),$/\1\n/'
